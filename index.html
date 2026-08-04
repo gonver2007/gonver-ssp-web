@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>gonver ssp</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #0192be 0%, #000 100%);
+      color: #eafaff;
+      overflow-x: hidden;
+      padding-top: 76px;
+    }
+    .top-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 76px;
+      background: rgba(0, 14, 29, .85);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10001;
+      backdrop-filter: blur(10px);
+    }
+    .top-bar span {
+      letter-spacing: .35em;
+      text-transform: uppercase;
+    }
+    .badge {
+      position: fixed;
+      top: 18px;
+      left: 18px;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: url('contenido/yt.png') center/cover no-repeat;
+      z-index: 10002;
+      display: block;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .hero {
+      min-height: calc(100vh - 76px);
+      padding: 20px 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-card {
+      width: min(860px, 100%);
+      background: rgba(2, 33, 58, .85);
+      border: 1px solid rgba(0, 251, 255, .75);
+      border-radius: 20px;
+      padding: 14px;
+    }
+    .hero-image {
+      border-radius: 16px;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: url('contenido/play holder foto.jpg') center/cover no-repeat;
+    }
+    .hero-hint {
+      text-align: center;
+      margin-top: 16px;
+      letter-spacing: .3em;
+      text-transform: uppercase;
+      font-size: .9rem;
+    }
+    .hero-hint div {
+      margin-top: 6px;
+      font-size: 1.3rem;
+    }
+    .hero-hint .arrow {
+      display: inline-block;
+      font-size: 2.2rem;
+      animation: floatArrow 1.4s ease-in-out infinite;
+      transform-origin: center;
+    }
+    @keyframes floatArrow {
+      0%, 100% { transform: translateY(0); opacity: 1; }
+      50% { transform: translateY(10px); opacity: .75; }
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      max-width: 900px;
+      margin: 0 auto 80px;
+      padding: 0 18px;
+    }
+    .card {
+      background: rgba(6, 8, 10, .25);
+      border: 1px solid rgba(0, 251, 255, .75);
+      border-radius: 14px;
+      overflow: hidden;
+      text-decoration: none;
+      color: #eafaff;
+    }
+    .card-image {
+      height: 180px;
+      background: url('contenido/play holder foto.jpg') center/cover no-repeat;
+    }
+    .card-title {
+      padding: 16px;
+      text-align: center;
+      font-size: 1.25rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+    .fixed-action {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 96px;
+      height: 96px;
+      background: transparent url('contenido/SSP 1.20.png') center/contain no-repeat;
+      border: none;
+      outline: none;
+      box-shadow: none;
+      text-decoration: none;
+      z-index: 10000;
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+    .fixed-action:hover {
+      transform: translateY(-8px);
+      box-shadow: none !important;
+    }
+    .fixed-action:focus,
+    .fixed-action:focus-visible {
+      outline: none;
+      box-shadow: none;
+    }
+    /* Efecto: elevar ligeramente elementos interactivos al pasar el ratón */
+    button,
+    .card,
+    .badge,
+    .fixed-action,
+    .btn,
+    input[type="button"],
+    input[type="submit"],
+    a.button {
+      transition: transform .18s ease, box-shadow .18s ease;
+      will-change: transform;
+    }
+    button:hover,
+    .card:hover,
+    .badge:hover,
+    .fixed-action:hover,
+    .btn:hover,
+    input[type="button"]:hover,
+    input[type="submit"]:hover,
+    a.button:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+    }
+    @media (max-width: 780px) {
+      .hero { padding: 20px 14px 24px; }
+      .fixed-action { width: 64px; height: 64px; right: 16px; bottom: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar"><span>bienvenido</span></div>
+  <a class="badge" href="https://www.youtube.com/@gonverYT" target="_blank" rel="noopener noreferrer" aria-label="Ir al canal de YouTube"></a>
+
+  <section class="hero">
+    <div class="hero-card">
+      <div class="hero-image"></div>
+      <div class="hero-hint">
+        <div>scroll</div>
+        <div class="arrow">⌄</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="grid">
+    <a class="card" href="index_Proyectos.html" rel="noopener noreferrer">
+      <div class="card-image"></div>
+      <div class="card-title">Proyectos</div>
+    </a>
+
+    <a class="card" href="index_TexturePacks.html" target="_blank" rel="noopener noreferrer">
+      <div class="card-image"></div>
+      <div class="card-title">Texture Packs</div>
+    </a>
+  </section>
+
+  <a class="fixed-action" href="https://www.youtube.com/playlist?list=PLweq8_0eVzE2LyytXi07ktzgwQ_KavB_w" target="_blank" rel="noopener noreferrer" aria-label="Abrir YouTube"></a>
+</body>
+</html>
