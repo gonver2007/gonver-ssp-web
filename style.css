@@ -1,13 +1,13 @@
 :root {
   color-scheme: dark;
-  --bg-top: #a8e2fc; 
-  --bg-bottom: #92bcfa; 
+  --bg-top: #a8e2fc;
+  --bg-bottom: #92bcfa;
   --bg-surface: rgba(4, 18, 35, 0.88);
   --bg-surface-soft: rgba(6, 26, 45, 0.72);
   --accent: #45f7ff;
   --accent-soft: rgba(69, 247, 255, 0.18);
   --text: #eafaff;
-  --border: rgba(69, 247, 255, 0.22);
+  --border: rgba(238, 244, 244, 0.22);
   --shadow: 0 28px 92px rgba(0, 0, 0, 0.28);
 }
 
@@ -130,7 +130,7 @@ select {
   padding: 28px;
   border-radius: 32px;
   background: linear-gradient(180deg, rgba(1, 18, 33, 0.92), rgba(2, 28, 49, 0.88));
-  border: 1px solid rgba(69, 247, 255, 0.16);
+  border: 1px solid rgba(0, 242, 255, 0.388);
   box-shadow: var(--shadow);
   backdrop-filter: blur(18px);
   animation: fadeInUp 0.86s ease both;
