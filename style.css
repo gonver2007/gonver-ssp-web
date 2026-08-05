@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap');
-
 :root {
   color-scheme: dark;
-  --bg-top: #0192be;
-  --bg-bottom: #000000;
+  --bg-top: #a8e2fc;
+  --bg-bottom: #92bcfa;
   --bg-surface: rgba(4, 18, 35, 0.88);
   --bg-surface-soft: rgba(6, 26, 45, 0.72);
   --accent: #45f7ff;
@@ -22,7 +20,7 @@ body {
   min-height: 100%;
   margin: 0;
   font-family: 'Inter', system-ui, sans-serif;
-  background: radial-gradient(circle at top, rgba(69, 247, 255, 0.08), transparent 32%), linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+  background: radial-gradient(circle at top, rgba(255, 255, 255, 0.16), transparent 32%), linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
   color: var(--text);
   overflow-x: hidden;
   scroll-behavior: smooth;
