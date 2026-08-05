@@ -1,7 +1,7 @@
 :root {
   color-scheme: dark;
-  --bg-top: #a8e2fc;
-  --bg-bottom: #92bcfa;
+  --bg-top: #a8e2fc; 
+  --bg-bottom: #92bcfa; 
   --bg-surface: rgba(4, 18, 35, 0.88);
   --bg-surface-soft: rgba(6, 26, 45, 0.72);
   --accent: #45f7ff;
