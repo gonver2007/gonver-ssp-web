@@ -81,7 +81,7 @@ select {
   border-radius: 50%;
   background: radial-gradient(circle, rgba(69, 247, 255, 0.16), transparent 58%), url('contenido/yt.png') center/cover no-repeat;
   border: 2px solid rgba(69, 247, 255, 0.55);
-  box-shadow: 0 0 28px rgba(69, 247, 255, 0.18);
+  box-shadow: 0 0 28px rgba(69, 171, 255, 0.18);
   z-index: 1000;
 }
 
@@ -92,9 +92,9 @@ select {
   width: 92px;
   height: 92px;
   border-radius: 50%;
-  border: 1px solid rgba(69, 247, 255, 0.22);
-  background: radial-gradient(circle at 30% 30%, rgba(69, 247, 255, 0.16), transparent 42%), url('contenido/SSP 1.20.png') center/54% no-repeat;
-  box-shadow: 0 0 40px rgba(69, 247, 255, 0.18), inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(0, 242, 255, 0.523);
+  background: radial-gradient(circle at 30% 30%, rgba(0, 164, 173, 0.281), transparent 42%), url('contenido/SSP 1.20.png') center/54% no-repeat;
+  box-shadow: 0 0 40px rgba(69, 246, 255, 0.586), inset 0 0 0 1px rgba(255, 255, 255, 0.08);
   transition: transform 0.22s ease, filter 0.22s ease;
   z-index: 999;
 }
