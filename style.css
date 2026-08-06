@@ -78,18 +78,15 @@ select {
   left: 18px;
   width: 76px;
   height: 76px;
-  border-radius: 50%;
-  border: 2px solid rgba(69, 247, 255, 0.55);
-  box-shadow: 0 0 28px rgba(69, 171, 255, 0.18);
   z-index: 1000;
 }
 
 .page-home .site-badge {
-  background: radial-gradient(circle, rgba(69, 247, 255, 0.16), transparent 58%), url('contenido/yt.png') center/cover no-repeat;
+  background:url('contenido/yt.png') center/cover no-repeat;
 }
 
 .page-internal .site-badge {
-  background: radial-gradient(circle, rgba(69, 247, 255, 0.16), transparent 58%), url('contenido/casa.png') center/cover no-repeat;
+  background:url('contenido/casa.png') center/100% no-repeat;
 }
 
 .floating-action {
