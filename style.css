@@ -86,7 +86,83 @@ select {
 }
 
 .page-internal .site-badge {
-  background:url('contenido/casa.png') center/100% no-repeat;
+  background:url('contenido/vuelve.png') center/100% no-repeat;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 34px;
+  min-height: 300px;
+  border-radius: 32px;
+  background: linear-gradient(180deg, rgba(1, 18, 33, 0.92), rgba(2, 28, 49, 0.88));
+  border: 1px solid rgba(69, 247, 255, 0.18);
+  box-shadow: var(--shadow);
+}
+
+.feature-card__header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.feature-card__icon,
+.feature-card__button-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.feature-card__title {
+  margin: 0;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.feature-card__description {
+  margin: 0;
+  color: rgba(234, 250, 255, 0.8);
+  white-space: normal;
+  word-break: break-word;
+}
+
+.feature-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.feature-card__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(69, 247, 255, 0.14);
+  background: rgba(69, 247, 255, 0.08);
+  color: var(--text);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.feature-card__button:hover {
+  background: rgba(69, 247, 255, 0.18);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 920px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .floating-action {
@@ -139,7 +215,9 @@ select {
   backdrop-filter: blur(18px);
   animation: fadeInUp 0.86s ease both;
 }
-
+.page-proyectos .page-card {
+  width: min(300px, 100%);
+}
 .hero__panel {
   display: grid;
   gap: 22px;
@@ -275,7 +353,8 @@ select {
 
 .page-card__image {
   border-radius: 22px;
-  min-height: 320px;
+  max-width: 100%;
+  height: auto;
   object-fit: contain;
 }
 
