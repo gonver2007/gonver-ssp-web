@@ -33,7 +33,53 @@
     </section>
   </main>
 
+  <nav class="faq-bar" aria-label="Preguntas frecuentes">
+    <details class="faq-dropdown">
+      <summary class="faq-bar__trigger">
+        <span class="faq-bar__content">
+          <img class="faq-bar__icon" src="contenido/faq.png" alt="FAQ" />
+          <span class="faq-bar__label">FAQ</span>
+        </span>
+        <span class="faq-bar__chevron">▾</span>
+      </summary>
+      <div class="faq-dropdown__content">
+        <div class="faq-item">
+          <h3>¿Has abandonado la serie?</h3>
+          <p>No, esta serie requiere tiempo y es normal que el ritmo no sea constante.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Qué versión de Minecraft estas?</h3>
+          <p>Actualmente estoy con la versión 1.20 de Minecraft.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Usas mods en tu serie de Minecraft?</h3>
+          <p>No uso mods en mi serie de Minecraft actualmente aunque e usado anteriamente.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Por que no usas mods?</h3>
+          <p>Principalmente por dos motivos:</p>
+          <p>1. Porque me gusta jugar Minecraft lo mas vanilla posible.</p>
+          <p>2. Por fallos, bugs, corrupción etc.</p>
+        <p>     EN RESUMEN SI QUIERO HACER UN MUNDO PARA TODA LA VIDA BUSCO LA FORMA MAS SEGURA POSIBLE Y QUE MAS ME GUSTE</p>
+      </div>
+    </details>
+  </nav>
+  </a>
   <a class="floating-action" href="https://www.youtube.com/playlist?list=PLweq8_0eVzE2LyytXi07ktzgwQ_KavB_w" target="_blank" rel="noopener noreferrer" aria-label="Abrir YouTube"></a>
+
+  <script>
+    const faqDropdown = document.querySelector('.faq-dropdown');
+
+    if (faqDropdown) {
+      faqDropdown.addEventListener('toggle', () => {
+        if (faqDropdown.open) {
+          setTimeout(() => {
+            faqDropdown.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }, 120);
+        }
+      });
+    }
+  </script>
 </body>
 </html>
  
