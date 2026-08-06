@@ -321,6 +321,10 @@ select {
   min-height: 420px;
 }
 
+.hero__img {
+  object-position: center;
+}
+
 .hero__media::after,
 .card::before {
   content: '';
@@ -497,6 +501,18 @@ select {
 }
 
 @media (max-width: 640px) {
+  .hero__media {
+    min-height: 220px;
+    overflow: hidden;
+  }
+
+  .hero__img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center 0%;
+    transform: scale(1.00);
+  }
+
   .top-bar__label {
     font-size: 0.78rem;
   }
